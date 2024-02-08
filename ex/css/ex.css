@@ -1,0 +1,62 @@
+*{ margin: 0; padding: 0;}
+ul, li{
+    list-style: none;
+}
+a{ color: #333; text-decoration: none;}
+a:hover{
+    color:red
+}
+
+.container{ width: 1000px;}
+.rel{ position: relative;}
+.abs{ position: absolute;}
+.d-flex{ display: flex;}
+.d-block{ display: block;}
+.d-none{ display: none;}
+.ofh{ overflow: hidden;}
+.red{ background-color: red;}
+
+.w200{ width: 200px;}
+.w800{ width: 800px;}
+.h100{ height: 100px;}
+.h200{ height: 200px;}
+.h350{ height: 350px;}
+.w33{ width: 33.333%;}
+
+.text-center{
+    text-align: center;
+}
+.jcc{ justify-content: center;}
+.jcb{ justify-content: space-between;}
+.aic{ align-items: center;}
+
+header{
+    padding: 2rem 0;
+    box-sizing: border-box;
+}
+#gnb{
+    text-indent: 1.5rem;
+}
+#gnb ul{
+    max-height:0;
+    overflow: hidden;
+    transition: 0.5s;    
+}
+#gnb li:hover ul{
+    max-height:300px;
+}
+#gnb > li:hover > a{
+    color:red
+    /* 대메뉴 내려가서 소메뉴 마우스 올리더라도 빨간색으로 되있음.(활성화) 중요!!*/
+}
+#gnb > li > a{
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 2;
+}
+.content{ }
+#popup{ top:50%; left:50%; 
+        transform: translate(-50%, -50%);
+        background-color: white; border:1px solid black;
+        z-index: 1000000;        
+    }

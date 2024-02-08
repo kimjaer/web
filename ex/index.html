@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>C형 - 1 </title>
+<link rel="stylesheet" href="./css/ex.css">
+<script
+src="https://code.jquery.com/jquery-2.2.4.js"
+integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+crossorigin="anonymous"></script>
+<script defer src="./js/ex.js"></script>
+<script>
+
+    $(function(){
+
+        setInterval(anifun,3000)
+        function anifun(){
+            $(".swiper-wapper").animate({"marginLeft" : -$("swiper-slide").width() 
+        }, 400, function(){
+            $(".swiper-wapper .swiper-slide").eq(0).appendTo($(".swiper-wapper"))
+            $(".swiper-wapper").css("margin-left", 0)
+        })
+        }
+        
+    })
+</script>
+</head>
+<body>
+    <div class="container rel d-flex">
+        <header class="w200" id="hd">
+        <h1><a href="#none" class="d-block"><img src="./img/logo.png" alt="로고" class="d-block"></a></h1>
+        <ul id="gnb">
+            <li>
+            <a href="#none" class="d-block">대메뉴</a>
+            <ul class="d2">
+                <li><a href="#none" class="d-block">소메뉴</a></li>
+                <li><a href="#none" class="d-block">소메뉴</a></li>
+                <li><a href="#none" class="d-block">소메뉴</a></li>
+                <li><a href="#none" class="d-block">소메뉴</a></li>
+            </ul>
+            </li>
+            <li>
+            <a href="#none" class="d-block">대메뉴</a>
+            <ul class="d2">
+                <li><a href="#none" class="d-block">소메뉴</a></li>
+                <li><a href="#none" class="d-block">소메뉴</a></li>
+                <li><a href="#none" class="d-block">소메뉴</a></li>
+                <li><a href="#none" class="d-block">소메뉴</a></li>
+            </ul>
+            </li>
+            <li>
+            <a href="#none" class="d-block">대메뉴</a>
+            <ul class="d2">
+                <li><a href="#none" class="d-block">소메뉴</a></li>
+                <li><a href="#none" class="d-block">소메뉴</a></li>
+                <li><a href="#none" class="d-block">소메뉴</a></li>
+                <li><a href="#none" class="d-block">소메뉴</a></li>
+            </ul>
+            </li>
+            <li>
+            <a href="#none" class="d-block">대메뉴</a>
+            <ul class="d2">
+                <li><a href="#none" class="d-block">소메뉴</a></li>
+                <li><a href="#none" class="d-block">소메뉴</a></li>
+                <li><a href="#none" class="d-block">소메뉴</a></li>
+                <li><a href="#none" class="d-block">소메뉴</a></li>
+            </ul>
+            </li>
+        
+        </ul>
+        </header>
+        <div class="content w800">
+        <div class="swiper h350 ofh">
+            <div class="swiper-wapper d-flex">
+            <div class="swiper-slide"><img src="./img/banner1.jpg" alt="배너"></div>
+            <div class="swiper-slide"><img src="./img/banner2.jpg" alt="배너"></div>
+            <div class="swiper-slide"><img src="./img/banner3.jpg" alt="배너"></div>
+            </div>
+        </div>
+        <div class="threeTab d-flex h200 ofh">
+            <div class="boardtab w33"></div>
+            <div class="imgbanner w33 "><a href=""><img src="./img/thumb1.jpg" alt=""></a></div>
+            <div class="linkbanner w33"><a href=""><img src="./img/thumb2.jpg" alt=""></a></div>
+        </div>
+        <footer class="d-flex h100">
+            <h3 class="w200"><img src="./img/ft_logo.png" alt=""></h3>
+            <div class="fbox w800 ">
+            <ul class="d-flex">
+                <li><a href="" class="d-block">하단메뉴</a></li>
+                <li><a href="" class="d-block">하단메뉴</a></li>
+                <li><a href="" class="d-block">하단메뉴</a></li>
+                <li><a href="" class="d-block">하단메뉴</a></li>
+            </ul>
+            <div>copyright@</div>
+            </div>
+        </footer>
+        </div>
+        <div id="popup" class="abs d-none">
+        <p>컨테이너 정 가운데</p>
+        <button>닫기</button>
+        </div>
+    </div>
+</body>
+</html>
